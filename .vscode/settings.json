@@ -1,0 +1,6 @@
+{
+    "editor.autoIndentOnPaste": true,
+    "editor.autoIndent": "advanced",
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "files.autoSaveWhenNoErrors": true
+}

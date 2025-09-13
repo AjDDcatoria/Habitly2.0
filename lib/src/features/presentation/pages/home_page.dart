@@ -11,11 +11,16 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 20,
           children: [
             Text("Home"),
             ElevatedButton(
-                onPressed: () => context.go(RouteNames.login),
-                child: Text("Go Login Page")
+              onPressed: () => context.push(RouteNames.signup),
+              child: Text("Go Signup Page"),
+            ),
+            ElevatedButton(
+              onPressed: () => context.push(RouteNames.signin),
+              child: Text("Go Sign in Page"),
             ),
           ],
         ),
