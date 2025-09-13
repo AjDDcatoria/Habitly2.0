@@ -1,3 +1,4 @@
+import 'package:firebase_flutter/src/routes/app_router.dart';
 import 'package:firebase_flutter/src/themes/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -6,18 +7,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: AppTheme.lightTheme,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("My Flutter"),
-        ),
-        body: Center(
-          child: Text("Body"),
-        ),
-      ),
+      routerConfig: appRouter,
     );
   }
 }
